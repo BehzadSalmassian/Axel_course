@@ -45,8 +45,8 @@ SUBROUTINE MergeSort(dat)
         dat((2*i)+1)=tmp
         END IF
     END Do
-    print*, "Initial Matrix is"
-    print*, dat
+  !  print*, "Initial Matrix is"
+ !   print*, dat
 
     !----------------
     DO WHILE (d /= 0)
@@ -65,8 +65,8 @@ SUBROUTINE MergeSort(dat)
         END DO
     END DO
     !-----------------------
-    print*, "Sorted Matrix is"
-    print*, dat
+ !   print*, "Sorted Matrix is"
+  !  print*, dat
 
 CONTAINS
 
@@ -180,7 +180,7 @@ END DO
 !        print*, m
         DO j = 1, num, 2 * m
                 CALL merge(dat, j, MIN(j + m - 1, num), MIN(j + 2 * m - 1, num))
-                print*, dat
+          !      print*, dat
         END DO
     END DO
     !-----------------------

@@ -13,8 +13,8 @@ PROGRAM real_sort
   REAL,ALLOCATABLE,DIMENSION(:) :: dat
   REAL :: time1, time2, rv
   logical :: Ascendsort
-  INTEGER,PARAMETER,DIMENSION(7) :: sizes = (/ &
-      500,1000,2000,5000,10000,20000,500000 /)
+  INTEGER,PARAMETER,DIMENSION(9) :: sizes = (/ &
+      500,1000,2000,5000,10000,20000,50000,100000,200000 /)
 
 
   ! initialize pseudo random number generator
