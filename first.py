@@ -5,7 +5,6 @@ if __name__ == "__main__":
 
     # Step 2: Fill Lists
     import math
-
     xval = []
     yval = []
 
@@ -15,5 +14,12 @@ if __name__ == "__main__":
     for x in xval:
         yval.append(math.sin(x))
 
-    print("xval:", xval)
-    print("yval:", yval)
+    # Step 3: Plot Lists
+    plt.plot(xval, yval, label='y = sin(x)')
+    plt.title('Plot of y = f(x)')
+    plt.xlabel('x values')
+    plt.ylabel('y values')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+
