@@ -10,8 +10,9 @@ if __name__ == "__main__":
 
     for x in range(-50, 51):
         xval.append(x * 0.1)
-        yval_x2.append(x**2)
-        yval_x3.append(x**3)
+        yval_sin.append(math.sin(x))
+        yval_cos.append(math.cos(x))
+        yval_tan.append(math.tan(x))
     for x in xval:
         yval.append(math.sin(x))
 
